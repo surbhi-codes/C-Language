@@ -1,14 +1,15 @@
 #include<stdio.h>
-
-int main() {
+int main()
+{
 int num1, num2, sum;
-printf("Please enter the first number: ");
-scanf("%d", &num1);
 
-printf("Now, enter the second number: ");
+printf("Enter first number: ");
+scanf("%d", &num1);
+printf("Enter secpnd number: ");
 scanf("%d", &num2);
 
-sum  = num1 + num2;
-printf("Sum of the two numbers is: %d", sum);
-return 0;
+sum= num1 + num2;
+printf("The sum of %d and %d is: %d\n", num1, num2, sum);
+return 0; 
 }
+
