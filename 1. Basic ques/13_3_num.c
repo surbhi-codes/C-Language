@@ -3,13 +3,13 @@
 #include <stdio.h>
 int main()
 {
-    int a, b, c, large;
+    int a, b, c, largest;
     printf("Enter three numbers: ");
     scanf("%d %d %d", &a, &b, &c);
 
     // Using nested ternary operator
-    large = (a > b) ? ((a > c) ? a : c)
+    largest = (a > b) ? ((a > c) ? a : c)
                       : ((b > c) ? b : c);
 
-   printf("The largest number is: %d\n", large);
+   printf("The largest number is: %d\n", largest);
 }
