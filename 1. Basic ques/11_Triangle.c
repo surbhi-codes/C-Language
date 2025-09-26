@@ -5,7 +5,7 @@
 
 int main()
 {
-    float a, b, c, s, area;
+    float a, b, c, s, Area;
     printf("Enter the three sides of the triangle: ");
     scanf("%f %f %f", &a, &b, &c);
 
@@ -14,8 +14,8 @@ int main()
     s = (a + b + c)/2;
 
     // Area using Heron's formula
-    area = sqrt (s * (s-a) * (s-b) * (s-c));
+    Area = sqrt (s * (s-a) * (s-b) * (s-c));
 
-    printf ("Area of triangle is: %2.f\n", area);
+    printf ("Area of triangle is: %2.f\n", Area);
     return 0;
 }
