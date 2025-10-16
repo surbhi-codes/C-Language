@@ -12,6 +12,8 @@ int main()
   
     float result = first * second;
     printf("\n Product is: %f", result);
+    printf("\n Product is: %.2f", result);
+
     return 0;
 
 }
