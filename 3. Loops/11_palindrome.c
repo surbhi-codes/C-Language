@@ -3,22 +3,23 @@
 
 #include<stdio.h>
 int main() {
-    int num;
+    int num, i, rev = 0;
     printf("Please enter the number: ");
     scanf("%d", &num);
 
-    int reverse = 0;
-    int copy = num;
+    int temp = num;
      
-    while (copy > 0) {
-        reverse = (reverse * 10) + (copy % 10);
-        copy /= 10;
+    while (temp > 0) {
+        i = temp % 10;
+        temp /= 10;
+        rev = rev * 10 + i;
     }
-     if ( reverse == num) {
-        printf("The number %d is  Palindrome.", num);
-     } else {
-        printf("The number %d is not  Palindrome.", num);
-
-     }
+    
+    if (rev == num) {
+       printf("The number %d is  Palindrome.", num);
+    } else {
+       printf("The number %d is not  Palindrome.", num);
+    }
+     
     return 0;
 }
